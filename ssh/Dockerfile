@@ -17,6 +17,7 @@ COPY files/wheel /etc/sudoers.d/
 # Setup base
 RUN apk add --no-cache jq openssh sudo zsh openssl libxml2-utils ncurses \
     curl wget net-tools bind-tools rsync git nmap wget awake \
+    lirc \
     nano vim mosquitto-clients mariadb-client tmux && \
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh && \
     chmod a+x /run.sh /usr/bin/hassio && \
